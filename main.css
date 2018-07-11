@@ -1,0 +1,448 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background: rgb(40, 40, 40);
+  color: #555;
+}
+
+header {
+  height: calc(890px *2/3);
+  background: url(image/mount.png) 0 0 no-repeat;
+}
+header .mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+header .content {
+  width: 640px;
+  margin: 67px auto 0;
+  color: rgba(255,255,255,0.5);
+}
+.hello .title {
+  font-size: 2rem;
+  text-align: center;
+}
+.hello .text {
+  padding: 40px 67px 67px;
+  line-height: 2rem;
+  text-align: center;
+}
+.create{
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  padding: 40px 60px; 
+}
+.create .title{
+  text-align: center;
+  line-height: 2rem;
+}
+.create .profile {
+  text-align: center;
+  font-size: 0.4rem;
+  margin-bottom: 30px;
+}
+.create .input {
+  display: flex;
+  justify-content: space-between;
+}
+.create .input>input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  border-radius: 2px;
+  width: 180px;
+  height: 30px;
+  background: rgba(0, 0, 0, 0);
+  text-indent: 1rem;
+}
+.create .input input[type=button]{
+  width: 80px;
+  background: white;
+  text-indent: 0;
+  cursor: pointer;
+}
+
+.introduce {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px 16% 80px;
+  background: white; 
+}
+.introduce-content {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.introduce-content .title {
+  font-size: .8rem;
+  margin: 30px 0;
+}
+.introduce-content .text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: normal;
+}
+.introduce .section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section .option{
+  width: 50%;
+  box-sizing: border-box;
+  padding: 60px;
+}
+.section .option:nth-child(1) {
+  background: url(image/icon_03.png) 0px 68px no-repeat;
+}
+.section .option:nth-child(2) {
+  background: url(image/icon_10.png) 0px 68px no-repeat;
+}
+.section .option:nth-child(3) {
+  background: url(image/icon_15.png) 0px 68px no-repeat;
+}
+.section .option:nth-child(4) {
+  background: url(image/icon_07.png) 0px 68px no-repeat;
+}
+.option .name {
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+.option .des {
+  line-height: 1.5rem;
+}
+
+.smart-car{
+  width: 100%;
+  height: calc(800px * 2/3);
+  background: url(image/forest.png) 0 0 no-repeat;
+}
+.smart-car .mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.smart-car .content {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0 50px 150px;
+  color: rgba(255,255,255,0.5);
+  font-size: 0;
+}
+.smart-car .public {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 50px;
+  display: inline-block;
+}
+.public .project {
+  width: 80%;
+  padding-right: 20%;
+}
+.project .title {
+  font-size: 2rem;
+}
+.project .text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 30px 0;
+}
+.checked button {
+  width: 200px;
+  height: 40px;
+  outline: none;
+  border-radius: 3px;
+  font-size: 0.6rem;
+  border: none;
+  cursor: pointer;
+}
+.checked .check-out {
+  background: white;
+  border: 1px solid white;
+}
+.checked .try-free {
+  background: rgba(0,0,0,0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255,255,255,0.5);
+  float: right;
+}
+.smart-car .learning-means {
+  position: absolute;
+  top: 50px;
+  left: 60%;
+  width: 50%;
+  height: 430px;
+  background: url(image/ipad.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+.learning-means .ipad-content {
+  position: absolute;
+  top:24px;
+  left: 45px;
+  background: url(image/screen_02.png) 0 0 no-repeat;
+  width: 660px;
+  height: 378px;
+  background-size: 80%;
+}
+
+.about-our {
+  background: white;
+}
+.about-our .through-line {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.about-our>div{
+  padding: 0 20%;
+}
+.product .title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 40px 0;
+}
+.product .content {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+.product .content>div {
+  flex-basis: 26%;
+  padding-top: 50px;
+}
+.product .content>div:nth-child(1) {
+  background: url(image/screen_10.png) center 0 no-repeat;
+  background-size: 50%;
+}
+.product .content>div:nth-child(2) {
+  background: url(image/screen_06.png) center 0 no-repeat;
+  background-size: 40%;
+}
+.product .content>div:nth-child(3) {
+  background: url(image/screen_14.png) center 0 no-repeat;
+  background-size: 50%;
+}
+.product-des {
+  overflow: hidden;
+}
+.product-des>div{
+  float: left;
+}
+.product-des .product-image {
+  width: 60%;
+  height: 260px;
+}
+.product-des .product-image1 {
+  background: url(image/person_03.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+.product-des .product-image1+div {
+  margin-bottom: 40px;
+}
+.product-des .product-image2 {
+  background: url(image/person_06.png) 0 0 no-repeat;
+  background-size: 100%;
+}
+.product-des .product-info{
+  width: 40%;
+  height: 260px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.product-des .product-info .title {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.product-des .product-info .text {
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+}
+
+.team .team-introduce {
+  text-align: center;
+}
+.team-introduce .title {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 20px;
+}
+.team-introduce .text {
+  line-height: 2rem;
+  margin-bottom: 40px;
+}
+.team-members {
+  overflow: hidden;
+}
+.team-members .person {
+  width: 350px;
+  height: 200px;
+}
+.team-members .person:hover .mask {
+  display: block;
+}
+.team-members>div:nth-child(1) {
+  background: url(image/person01_03.png) 0 0 no-repeat;
+  background-size: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+.team-members>div:nth-child(2) {
+  background: url(image/person_09.png) 0 0 no-repeat;
+  background-size: 100%;
+  float: right;
+  margin-bottom: 20px;
+}
+.team-members>div:nth-child(3) {
+  background: url(image/person_17.png) 0 0 no-repeat;
+  background-size: 100%;
+  float: left;
+}
+.team-members>div:nth-child(4) {
+  background: url(image/person_14.png) 0 0 no-repeat;
+  background-size: 100%;
+  float: right;
+}
+.person .mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.person .mask .content {
+  padding: 50px;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
+}
+.person .content .name {
+  line-height: 3rem;
+}
+.person .content .des {
+  font-size: .5rem;
+  
+}
+.person .content .link-me {
+  width: 100%;
+  height: 40px;
+  margin-top: 15px;
+  background: url(image/link-me_03.png) center no-repeat;
+  background-size: 50%; 
+  cursor: pointer;
+}
+
+.find-me {
+  display: flex;
+}
+.find-me .leaving-message {
+  width: 350px;
+  box-sizing: border-box;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+.leaving-message .title {
+  text-align: center;
+  margin: 20px 0;
+  font-weight: 600;
+}
+.leaving-message input {
+  width: 280px;
+  height: 30px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  text-indent: 1rem;
+  border-radius: 3px;
+  font-size: 0.6rem;
+}
+.leaving-message [name=message] {
+  width: 260px;
+  height: 80px;
+  margin: 10px;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+  padding: 1rem;
+  resize: none;
+}
+.leaving-message [type=button] {
+  font-size: 0.5rem;
+  width: 282px;
+  height: 32px;
+  line-height: 30px;
+  color: white;
+  background: black;
+}
+.find-me .contacts {
+  width: 350px;
+  padding: 30px 20px 20px 50px;
+}
+.contacts .title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.contacts .text {
+  font-size: .8rem;
+  line-height: 1.5rem;
+}
+.contacts .content{
+  font-size: .8rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+.contacts .content>p {
+  padding-left: 30px;
+  margin-top: 20px;
+}
+.contacts .content .address {
+  background: url(image/icons_11.png) 0 14px no-repeat;
+}
+.contacts .content .tel {
+  background: url(image/icons_07.png) 0 0 no-repeat;
+}
+.contacts .content .post {
+  background: url(image/icons_15.png) 0 10px no-repeat;
+}
+
+footer {
+  padding: 7% 15%;
+  width: 70%;
+  display: flex;
+  background: #000;
+  color: rgba(255,255,255,0.6);
+}
+footer .option {
+  width: 20%;
+  flex-grow: 1;
+}
+footer>div:nth-child(4) {
+  flex-grow: 2;
+}
+footer .option .title {
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+footer .option .text {
+  font-size: .6rem;
+  margin-bottom: 15px;
+  line-height: 2rem;
+}
+footer .links img{
+  margin-right: 15px;
+  cursor: pointer;
+}
